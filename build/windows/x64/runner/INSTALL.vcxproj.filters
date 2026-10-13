@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Politeh\SEM(5)\KP\Maplit\build\windows\x64\CMakeFiles\f9da82d440d7870f3ec7c21f2b49881f\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DF658D15-3E85-3E4D-BEEF-F4848B6D7985}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

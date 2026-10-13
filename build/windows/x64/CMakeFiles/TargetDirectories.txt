@@ -1,0 +1,10 @@
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/CMakeFiles/INSTALL.dir
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/CMakeFiles/ALL_BUILD.dir
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/CMakeFiles/ZERO_CHECK.dir
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/flutter/CMakeFiles/flutter_wrapper_plugin.dir
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/flutter/CMakeFiles/flutter_wrapper_app.dir
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/flutter/CMakeFiles/flutter_assemble.dir
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/flutter/CMakeFiles/INSTALL.dir
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/CMakeFiles/maplit.dir
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/CMakeFiles/INSTALL.dir
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/CMakeFiles/ALL_BUILD.dir
