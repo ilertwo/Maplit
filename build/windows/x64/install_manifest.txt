@@ -1,0 +1,16 @@
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/icudtl.dat
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/flutter_windows.dll
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.bin
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/1.png
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/2.png
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/3.png
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/4.png
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/5.png
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/FontManifest.json
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/kernel_blob.bin
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/NativeAssetsManifest.json
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/NOTICES.Z
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag
+D:/Politeh/SEM(5)/KP/Maplit/build/windows/x64/runner/Debug/data/flutter_assets/shaders/stretch_effect.frag
