@@ -9,16 +9,23 @@ class ForgotScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFAF8FC), // Світлий фон з дизайну
+      backgroundColor: const Color(0xFFFAF8FC),
+      appBar: AppBar(
+        backgroundColor: const Color(0xFFFAF8FC),
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black87),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-
-              // Підзаголовок
+              const SizedBox(height: 16),
               const Text(
                 'Enter your email address.',
                 textAlign: TextAlign.left,
@@ -46,13 +53,17 @@ class ForgotScreen extends StatelessWidget {
                   );
                 },
               ),
-              const SizedBox(height: 12),
+
+              const Spacer(),
 
               // Нижній текст узгодження
-              const Text(
-                'By continuing, you agree to keep your lending history accurate and private.',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 11, color: Color(0xFF9E9E9E)),
+              const Padding(
+                padding: EdgeInsets.only(bottom: 24.0),
+                child: Text(
+                  'By continuing, you agree to keep your lending history accurate and private.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 11, color: Color(0xFF9E9E9E)),
+                ),
               ),
             ],
           ),

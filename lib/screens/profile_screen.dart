@@ -3,6 +3,7 @@ import '../core/widgets/bottom_navigation_bar.dart';
 import '../core/widgets/app_widgets.dart';
 import 'home_screen.dart';
 import 'login_screen.dart';
+import 'edit_profile_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   static const String _userName = 'Artem Navroshchuk';
@@ -26,9 +27,15 @@ class ProfileScreen extends StatelessWidget {
           style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold),
         ),
         actions: [
+          // Підключаємо перехід на EditProfileScreen
           IconButton(
             icon: const Icon(Icons.edit_outlined, color: Colors.black87),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const EditProfileScreen()),
+              );
+            },
           ),
         ],
       ),
@@ -46,7 +53,7 @@ class ProfileScreen extends StatelessWidget {
                   shape: BoxShape.circle,
                   border: Border.all(color: const Color(0xFFEFE7F8), width: 3),
                   image: const DecorationImage(
-                    image: AssetImage('assets/images/5.png'), // Виправлено на .png
+                    image: AssetImage('assets/images/5.png'),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -138,7 +145,6 @@ class ProfileScreen extends StatelessWidget {
               icon: Icons.settings_outlined,
               title: 'Settings',
               onTap: () {
-                _showChangePasswordDialog(context);
               },
             ),
             const SizedBox(height: 12),
@@ -165,7 +171,6 @@ class ProfileScreen extends StatelessWidget {
             ),
 
             const SizedBox(height: 40),
-            // Версія застосунку
             const Text(
               'Borrowed Items Manager · v1.0',
               style: TextStyle(fontSize: 12, color: Color(0xFF9E9E9E)),
@@ -175,53 +180,13 @@ class ProfileScreen extends StatelessWidget {
       ),
       // Нижня панель навігації
       bottomNavigationBar: CustomBottomNavBar(
-        selectedIndex: 2,
+        selectedIndex: 1,
         onHomeTap: () {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const HomeScreen()),
           );
         },
-      ),
-    );
-  }
-
-  // Вікно для зміни пароля
-  void _showChangePasswordDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Change Password'),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: const [
-            TextField(
-              obscureText: true,
-              decoration: InputDecoration(labelText: 'Current Password'),
-            ),
-            SizedBox(height: 12),
-            TextField(
-              obscureText: true,
-              decoration: InputDecoration(labelText: 'New Password'),
-            ),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
-          ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF6B4FA0)),
-            onPressed: () {
-              Navigator.pop(context);
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Password changed successfully (mock)!')),
-              );
-            },
-            child: const Text('Save', style: TextStyle(color: Colors.white)),
-          ),
-        ],
       ),
     );
   }
