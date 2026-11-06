@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "786016721458",
+    "project_id": "maplit-app-dfb53",
+    "storage_bucket": "maplit-app-dfb53.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786016721458:android:e0ef01e4d2f0e9b8207a2b",
+        "android_client_info": {
+          "package_name": "com.example.maplit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGjdhKMJ8CWJ1l0N9fQ07E-FY20TPspuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

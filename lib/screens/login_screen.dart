@@ -16,12 +16,11 @@ class LoginScreen extends StatelessWidget {
       backgroundColor: const Color(0xFFFAF8FC),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 60.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-
               const AuthHeader(),
               const SizedBox(height: 32),
 
@@ -37,7 +36,7 @@ class LoginScreen extends StatelessWidget {
                 labelText: 'Password',
                 hintText: 'Enter your password',
                 obscureText: true,
-                suffixIcon: Icon(Icons.close),
+                suffixIcon: Icon(Icons.cancel_outlined, color: Colors.black54),
               ),
               const SizedBox(height: 8),
 
@@ -72,22 +71,28 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 12),
 
               // Кнопка Sign up
-              SecondaryButton(
-                text: 'Sign up',
-                onPressed: () {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => const RegisterScreen()),
-                  );
-                },
+              Center(
+                child: SecondaryButton(
+                  text: 'Sign up',
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => const RegisterScreen()),
+                    );
+                  },
+                ),
               ),
-              const SizedBox(height: 24),
+
+              const Spacer(),
 
               // Нижній текст узгодження
-              const Text(
-                'By continuing, you agree to keep your lending history accurate and private.',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 11, color: Color(0xFF9E9E9E)),
+              const Padding(
+                padding: EdgeInsets.only(bottom: 8.0),
+                child: Text(
+                  'By continuing, you agree to keep your lending history accurate and private.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 11, color: Color(0xFF9E9E9E)),
+                ),
               ),
             ],
           ),

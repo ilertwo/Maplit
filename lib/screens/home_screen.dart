@@ -3,6 +3,8 @@ import '../core/widgets/bottom_navigation_bar.dart';
 import '../core/widgets/item_card.dart';
 import '../core/widgets/section_header.dart';
 import 'profile_screen.dart';
+import 'item_details_screen.dart';
+import 'add_item_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String _userName = 'Artem';
@@ -30,7 +32,6 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Вітання користувача
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -39,14 +40,14 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     Text(
                       'Good morning, $_userName',
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                         color: Color(0xFF1E1E1E),
                       ),
                     ),
-                    SizedBox(height: 4),
-                    Text(
+                    const SizedBox(height: 4),
+                    const Text(
                       'Two items need your attention this week.',
                       style: TextStyle(fontSize: 13, color: Color(0xFF7A7A7A)),
                     ),
@@ -63,7 +64,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             SizedBox(
-              height: 230,
+              height: 170,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -71,8 +72,21 @@ class HomeScreen extends StatelessWidget {
                     title: 'Pen',
                     subtitle: 'Updated Sep 28',
                     status: 'Return by Oct 03',
-                    statusColor: const Color(0xFF2E7D32), // Зелений
+                    statusColor: const Color(0xFF2E7D32),
                     imageUrl: 'assets/images/1.png',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ItemDetailsScreen(
+                            title: 'Pen',
+                            imageUrl: 'assets/images/1.png',
+                            updatedText: 'Updated 2 days ago',
+                            dateText: '03.09.2026',
+                          ),
+                        ),
+                      );
+                    },
                   ),
                   const SizedBox(width: 12),
                   ItemCard(
@@ -81,6 +95,19 @@ class HomeScreen extends StatelessWidget {
                     status: 'With you · 6 days',
                     statusColor: const Color(0xFF2E7D32),
                     imageUrl: 'assets/images/2.png',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ItemDetailsScreen(
+                            title: 'Zhytomyr',
+                            imageUrl: 'assets/images/2.png',
+                            updatedText: 'Updated 2 days ago',
+                            dateText: '26.09.2026',
+                          ),
+                        ),
+                      );
+                    },
                   ),
                 ],
               ),
@@ -94,7 +121,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             SizedBox(
-              height: 230,
+              height: 170,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -104,6 +131,19 @@ class HomeScreen extends StatelessWidget {
                     status: 'Pick up today',
                     statusColor: const Color(0xFF2E7D32),
                     imageUrl: 'assets/images/3.png',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ItemDetailsScreen(
+                            title: 'Hair dryer',
+                            imageUrl: 'assets/images/3.png',
+                            updatedText: 'Updated 2 days ago',
+                            dateText: '25.09.2026',
+                          ),
+                        ),
+                      );
+                    },
                   ),
                   const SizedBox(width: 12),
                   ItemCard(
@@ -112,6 +152,19 @@ class HomeScreen extends StatelessWidget {
                     status: 'Ready to collect',
                     statusColor: const Color(0xFF2E7D32),
                     imageUrl: 'assets/images/4.png',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ItemDetailsScreen(
+                            title: 'left sock',
+                            imageUrl: 'assets/images/4.png',
+                            updatedText: 'Updated 2 days ago',
+                            dateText: '22.09.2026',
+                          ),
+                        ),
+                      );
+                    },
                   ),
                 ],
               ),
@@ -119,6 +172,17 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 80), // Відступ для нижньої панелі
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: const Color(0xFFEFE7F8),
+        elevation: 0,
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const AddItemScreen()),
+          );
+        },
+        child: const Icon(Icons.add, color: Color(0xFF6B4FA0)),
       ),
       // Нижня панель навігації
       bottomNavigationBar: CustomBottomNavBar(
