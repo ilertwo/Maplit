@@ -70,3 +70,8 @@ bin/
 /dist/
 /nbdist/
 /.nb-gradle/
+<<<<<<< HEAD
+=======
+
+android/app/google-services.json
+>>>>>>> c320003 (fix(security): exclude google-services.json from tracking)
